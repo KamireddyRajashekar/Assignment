@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <link rel="icon" href="../assets/img8.png"> 
+        <title>Hrm</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#">
+            <img src="../assets/logo.png" width="250" height="130" class="d-inline-block align-top" alt="" style="margin-left: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav" style="margin-left: 500px;">
+                <li class="nav-item active">
+                  <a class="nav-link text-dark" href="./home.html" style="font-size: 30px;font-weight: bolder;font-family: cursive;" >Home</span></a>
+                </li>
+                <li class="nav-item" style="margin-left: 60px;">
+                  <a class="nav-link" href="./contact.html"  style="font-size: 30px;font-weight: bolder;font-family: cursive;">Contact</a>
+                </li>
+                <li class="nav-item" style="margin-left:110px;">
+                  <a class="nav-link" href="./login.html">
+                    <button class="btn btn-dark"  style="font-size: 20px;font-weight: bolder;font-family: cursive;padding: 10px;">GET STARTED</button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div>
+            <center>
+                <img src="../assets/logo1.png" width="500px" style="margin-top: 150px;" class="border border-3 rounded right ">
+            </center><br><br>
+            <div class="d-flex justify-content-center align-items-center">
+                <div style="border: 2px solid rgb(69, 69, 63);padding: 20px;border-radius: 30px;">
+                    <form action="form1.html">
+                        UserName:<input type="text" placeholder="Name" class="form-control" id="text" required><br>
+                        <p id="msg" style="color: red;"></p>
+                        Password:<input type="password" placeholder="Password" class="form-control" id="password" required> <br>
+                        <p id="msg1" style="color: red;"></p>
+                    <div class="d-grid"> 
+                        <button class="btn btn-danger" onclick="funClick()">Login</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div><br><br>
+        <div style="font-family: cursive;">
+            <hr>
+           <center>
+            <h5>2022 All Rights Reserved</h5>
+           </center>
+        </div>
+        <script type="text/javascript">
+            let text=document.getElementById("text").value;
+            let password=document.getElementById("password").value;
+            let msg=document.getElementById("msg");
+            let msg1=document.getElementById("msg1");
+
+            function funClick()
+            {
+                if(text=="")
+                {
+                    msg.innerHTML="Please fill the details";
+                }
+                if(password=="")
+                {
+                    msg1.innerHTML="Please fill the details";
+                }
+            }
+        </script>
+
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>    
+
+    </body>
+ </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
